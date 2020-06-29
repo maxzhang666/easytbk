@@ -66,10 +66,6 @@ class SearchcommodityQueryRequest  extends SuningRequest{
 	 *
 	 */
 	private $sortType;
-	/**
-	 *
-	 */
-	private $coupon;
 
 	/**
 	 *
@@ -178,15 +174,6 @@ class SearchcommodityQueryRequest  extends SuningRequest{
 	public function setSortType($sortType) {
 		$this->sortType = $sortType;
 		$this->apiParams["sortType"] = $sortType;
-	}
-	
-	public function getCoupon() {
-		return $this->coupon;
-	}
-
-	public function setCoupon($coupon) {
-		$this->coupon = $coupon;
-		$this->apiParams["coupon"] = $coupon;
 	}
 
 	public function getStartPrice() {
